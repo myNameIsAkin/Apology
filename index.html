@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Sorry</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>I'm Sorry</h1>
+      <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+      </div>
+    </div>
+
+    <div class="card apology-card">
+      <div class="apology-text">
+        <p>I wanted to take a moment to sincerely apologize for what happened. I know my actions hurt you, and that's the last thing I ever want to do.</p>
+        <div id="more-text" class="hidden">
+          <p>You mean the world to me, and I value our relationship more than anything. I understand that I made a mistake, and I'm truly sorry for the pain I caused.</p>
+          <p>I've taken time to reflect on what happened, and I promise to do better. Your feelings are important to me, and I want to make things right between us.</p>
+          <p>I hope you can find it in your heart to forgive me. I love you, and I'm committed to being the partner you deserve.</p>
+        </div>
+      </div>
+      <button id="read-more" class="btn-text">Read More ▼</button>
+    </div>
+
+    <div class="memories-section">
+      <h2>Our Memories</h2>
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <div class="video-container">
+            <video id="memory-video" controls>
+              <source src="Images/1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="memory-text">
+            <h3 id="memory-title">Our First Date</h3>
+            <p id="memory-description">Remember that little café where we talked for hours?</p>
+          </div>
+        </div>
+        <div class="gallery-controls">
+          <button id="prev-btn" class="gallery-btn">◀</button>
+          <div id="gallery-dots" class="gallery-dots">
+            <!-- Dots will be added here -->
+          </div>
+          <button id="next-btn" class="gallery-btn">▶</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card forgive-card">
+      <h2>Will You Forgive Me?</h2>
+      <div class="button-group">
+        <button class="btn btn-primary">Yes, I Forgive You</button>
+        <button class="btn btn-outline">Let's Talk More</button>
+        <a href="#" id="whatsapp-btn" class="btn btn-whatsapp">
+          <span class="whatsapp-icon">✉️</span> Message Me on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with ❤️ just for you</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
